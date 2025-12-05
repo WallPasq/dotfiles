@@ -23,3 +23,6 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Previous tab" })
 -- --- Save and Exit Quickly ---
 keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 keymap.set("n", "<leader>q", "<cmd>q<CR>", { desc = "Exit" })
+
+-- --- Open Line Warnings/Errors ---
+keymap.set("n", "gl", vim.diagnostic.open_float, { desc = "Open line warnings/errors" })
