@@ -11,10 +11,13 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install the base programs
-brew install neovim kitty uv imagemagick ghostscript fzf fd bat tree zoxide stow
+brew install neovim kitty uv fnm imagemagick ghostscript fzf fd bat tree zoxide stow
 
 # Install Poe the Poet as an add-on for uv
 uv tool install poethepoet
+
+# Install the latest version of Node
+fnm install --lts
 
 # Nerd font
 brew install --cask font-fira-code-nerd-font
